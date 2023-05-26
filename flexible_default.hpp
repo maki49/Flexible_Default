@@ -7,6 +7,7 @@ struct Flexible_Default
 {
     Tparam value;
     bool is_readin = false;
+    Tparam operator()() { return value; }
 
     void readin(Tparam value)
     {
